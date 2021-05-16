@@ -11,10 +11,13 @@
 
 <body>
   <header class="page-header wrapper">
+
+    
+
     <!--
     <img src="images/header.png">
     -->
-    <h1><a href="index.html"><img class="logo" src="images/"></a></h1>
+    <h1><a href="index.html"><img class="icon" src="images/icon.png"></a></h1>
 
     <nav>
       <ul class="main-nav">
@@ -26,13 +29,34 @@
     </nav>
   </header>
 
+  <div id="youtube-area">
+    <div id="youtube" data-property="{
+      videoURL: 'https://youtu.be/11KemXrPgPA',
+      containment: '#youtube-area',
+      autoPlay: true,
+      loop: 1,
+      mute: true,
+      showControls: false,
+      showYTLogo: false
+    }"></div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script>
+//jquery.mb.YTPlayerを使用する
+$(function() {
+  $('#youtube').YTPlayer();
+});
+</script>
+
   <div class="home-content wrapper">
     <h2 class="site-title">yoshikimasuda</h2>
     <p>Composer | Sound Designer</p>
   </div>
 
   <div class="wrapper grid">
-    <div class="photo big-photo">
+    <div>
       <figure><img src="images/csd.png" alt="C|SD yoshikimasuda"><figcaption></figcaption></figure>
     </div>
 
